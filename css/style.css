@@ -1,0 +1,113 @@
+/* STRAT GENERAL */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    --main-color:rgb(72, 117, 250);
+    --sec-color:#990c06;
+    --main-transition:.3s;
+    scroll-behavior: smooth;
+}
+@font-face{
+    font-family: "Work-sans";
+    src: url("../font/WorkSans-VariableFont_wght.ttf");
+}
+body{
+    font-family:"Work-sans",Verdana;
+    background:linear-gradient(180deg,rgb(19, 38, 75),rgb(24, 27, 37));
+}
+/* END GENERAL */
+/* START HEADER */
+/* Start NavBar  */
+nav{
+    background-color:rgba(109, 100, 100, 0.7)
+}
+.navbar .logo{
+    border-right: 2px solid #fff;
+    padding-right: 8px;
+    transition: var(--main-transition);
+}
+.navbar a{
+    font-size: 20px;
+    transition: var(--main-transition);
+}
+.navbar a:hover{
+    transform: translateX(3px);
+}
+.navbar .logo:hover{
+    text-shadow:10px 10px 20px white, -10px -10px 20px white
+}
+.dropdown .dropdown-menu >a{
+   color: gray;
+   padding: 5px 10px;
+
+}
+/* Start Carousel */
+.carousel-item img{
+    height: calc(100vh - 68px);
+}
+.carousel-item .carousel-caption{
+    background-color: rgba(19, 38,75,.4)
+}
+.carousel-item .carousel-caption h5{
+    font-size: 35px;
+}
+.carousel-caption{
+    border-radius: 15px;
+}
+.carousel-indicators li{
+    height: 30px !important;
+}
+.carousel-indicators li:hover{
+    background-color: #fff;
+}
+/* End Carousel */
+/* Start img */
+.img{
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+}
+.img1 {
+    background-image: url(../imgs/abstract-1278077_1920.jpg);
+}
+.img2{
+    background-image: url("../imgs/finger-2081169_1280.jpg");
+}
+/* End img */
+.box5{
+    flex: 0 0 auto !important;
+}
+.link{
+    font-size: 45px;
+}
+@media (max-width:576px){
+    .hed{
+        font-size: 20px
+    }
+    .tit{
+        font-size: 15px
+    }
+    .tit1{
+        font-size: 18px;
+    }
+    .btn{
+        font-size: 15px !important;
+    }
+    .hed1{
+        font-size: 23px;
+    }
+}
+
+@media (max-width:992px){
+    .fo1 input{
+        max-width: 40%;
+    }
+   .fo2{
+    margin-top: 10px;
+   }
+}
+
+/* End NavBar  */
